@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informacion Familiar</title>
+</head>
+<body>
+
+  <h1 align="center">&#128106; Informacion Familiar</h1>
+
+  <!-- Navegación rápida entre pasos -->
+  <table width="100%" cellpadding="4" cellspacing="0" bgcolor="#f0f0f0">
+    <tr>
+      <td align="center">
+        <a href="inscripcion.html" style="margin: 0 10px;">[1] Datos del niño</a>
+        <a href="familiar.html" style="margin: 0 10px; font-weight: bold;">[2] Información Familiar</a>
+        <a href="medica.html" style="margin: 0 10px;">[3] Información Médica</a>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" cellpadding="2" cellspacing="0">
+    <tr>
+      <td align="left" width="33%"><a href="inscripcion.html">&#8592; Volver al paso anterior</a></td>
+      <td align="center" width="34%"><b>Paso 2 de 3 &mdash; Datos de los Padres</b></td>
+      <td align="right" width="33%">&nbsp;</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- Barra de pasos -->
+  <table width="100%" border="1" cellpadding="6" cellspacing="0">
+    <tr>
+      <td align="center" width="33%">[&#10003;] Datos del Nino</td>
+      <td align="center" width="33%"><b>[2] Informacion Familiar</b></td>
+      <td align="center" width="34%">[ ] Informacion Medica</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <form action="medica.html" method="get">
+
+    <fieldset>
+      <legend><b>Informacion Familiar</b></legend>
+
+      <br>
+
+      <!-- Tabla principal de dos columnas: Madre | Padre -->
+      <table border="1" cellpadding="10" cellspacing="0">
+
+        <!-- Encabezados -->
+        <tr bgcolor="#eeeeee">
+          <th align="center">&#9792; Madre</th>
+          <th align="center">&#9794; Padre</th>
+        </tr>
+
+        <!-- Nombre -->
+        <tr>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="m_nombres"><b>Nombres:</b></label></td>
+                <td><input type="text" id="m_nombres" name="m_nombres" size="20" required></td>
+                <td><label for="m_apellido1"><b>Primer apellido:</b></label></td>
+                <td><input type="text" id="m_apellido1" name="m_apellido1" size="20" required></td>
+              </tr>
+              <tr>
+                <td><label for="m_apellido2"><b>Segundo apellido:</b></label></td>
+                <td colspan="3"><input type="text" id="m_apellido2" name="m_apellido2" size="20"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="p_nombres"><b>Nombres:</b></label></td>
+                <td><input type="text" id="p_nombres" name="p_nombres" size="20" required></td>
+                <td><label for="p_apellido1"><b>Primer apellido:</b></label></td>
+                <td><input type="text" id="p_apellido1" name="p_apellido1" size="20" required></td>
+              </tr>
+              <tr>
+                <td><label for="p_apellido2"><b>Segundo apellido:</b></label></td>
+                <td colspan="3"><input type="text" id="p_apellido2" name="p_apellido2" size="20"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Fecha de nacimiento -->
+        <tr>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="m_fecha"><b>Fecha de nacimiento:</b></label></td>
+                <td><input type="date" id="m_fecha" name="m_fecha"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="p_fecha"><b>Fecha de nacimiento:</b></label></td>
+                <td><input type="date" id="p_fecha" name="p_fecha"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Domicilio -->
+        <tr>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="m_domicilio"><b>Domicilio:</b></label></td>
+                <td><input type="text" id="m_domicilio" name="m_domicilio" size="28" placeholder="Direccion"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td><label for="p_domicilio"><b>Domicilio:</b></label></td>
+                <td><input type="text" id="p_domicilio" name="p_domicilio" size="28" placeholder="Direccion"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Celular -->
+        <tr>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td width="40%"><label for="m_celular"><b>Celular: *</b></label></td>
+                <td><input type="tel" id="m_celular" name="m_celular" size="28" placeholder="Ej: 0414-1234567" required></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td width="40%"><label for="p_celular"><b>Celular: *</b></label></td>
+                <td><input type="tel" id="p_celular" name="p_celular" size="28" placeholder="Ej: 0414-7654321" required></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Ocupacion -->
+        <tr>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td width="40%"><label for="m_ocupacion"><b>Ocupacion:</b></label></td>
+                <td>
+                  <select id="m_ocupacion" name="m_ocupacion">
+                    <option value="">Seleccionar...</option>
+                    <option value="Docente">Docente</option>
+                    <option value="Ingeniero">Ingeniero</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Abogado">Abogado</option>
+                    <option value="Administrador">Administrador</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td width="40%"><label for="p_ocupacion"><b>Ocupacion:</b></label></td>
+                <td>
+                  <select id="p_ocupacion" name="p_ocupacion">
+                    <option value="">Seleccionar...</option>
+                    <option value="Docente">Docente</option>
+                    <option value="Ingeniero">Ingeniero</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Abogado">Abogado</option>
+                    <option value="Administrador">Administrador</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Lugar de trabajo -->
+        <tr>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td width="40%"><label for="m_trabajo"><b>Lugar de trabajo:</b></label></td>
+                <td><input type="text" id="m_trabajo" name="m_trabajo" size="28" placeholder="Nombre empresa"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td width="40%"><label for="p_trabajo"><b>Lugar de trabajo:</b></label></td>
+                <td><input type="text" id="p_trabajo" name="p_trabajo" size="28" placeholder="Nombre empresa"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Telefono de trabajo -->
+        <tr>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td width="40%"><label for="m_tel_trabajo"><b>Telefono de trabajo:</b></label></td>
+                <td><input type="tel" id="m_tel_trabajo" name="m_tel_trabajo" size="28" placeholder="Ej: 0212-1234567"></td>
+              </tr>
+            </table>
+          </td>
+          <td valign="top">
+            <table cellpadding="4" cellspacing="0" width="100%">
+              <tr>
+                <td width="40%"><label for="p_tel_trabajo"><b>Telefono de trabajo:</b></label></td>
+                <td><input type="tel" id="p_tel_trabajo" name="p_tel_trabajo" size="28" placeholder="Ej: 0212-7654321"></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+      </table>
+
+      <br>
+
+      <!-- Situacion Familiar -->
+      <fieldset>
+        <legend><b>Situacion Familiar</b></legend>
+        <br>
+        <table cellpadding="6" cellspacing="0" width="100%">
+          <tr>
+            <td align="center">
+              <label><input type="radio" name="situacion" value="Casados"> Casados</label>
+              &nbsp;&nbsp;&nbsp;
+              <label><input type="radio" name="situacion" value="Unidos"> Unidos</label>
+              &nbsp;&nbsp;&nbsp;
+              <label><input type="radio" name="situacion" value="Separados"> Separados</label>
+              &nbsp;&nbsp;&nbsp;
+              <label><input type="radio" name="situacion" value="Divorciados"> Divorciados</label>
+              &nbsp;&nbsp;&nbsp;
+              <label><input type="radio" name="situacion" value="Unico"> Unico (padre/madre)</label>
+            </td>
+          </tr>
+        </table>
+        <br>
+      </fieldset>
+
+      <br>
+      <p><small>* Campos obligatorios</small></p>
+
+    </fieldset>
+
+    <br>
+
+    <table width="100%" cellpadding="4">
+      <tr>
+        <td align="left"><a href="inscripcion.html">&#8592; Anterior</a></td>
+        <td align="right"><input type="submit" value="Siguiente →"></td>
+      </tr>
+    </table>
+
+  </form>
+
+  <hr>
+  <p align="center"><small>Sistema de Fichas de Inscripcion &mdash; Pagina 3 de 4</small></p>
+
+</body>
+</html>

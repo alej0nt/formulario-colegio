@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Inscripcion</title>
+</head>
+<body>
+
+  <h1 align="center">&#127979; Ficha de Inscripcion</h1>
+
+  <!-- Navegación rápida entre pasos -->
+  <table width="100%" cellpadding="4" cellspacing="0" bgcolor="#f0f0f0">
+    <tr>
+      <td align="center">
+        <a href="inscripcion.html" style="margin: 0 10px; font-weight: bold;">[1] Datos del niño</a>
+        <a href="familiar.html" style="margin: 0 10px;">[2] Información Familiar</a>
+        <a href="medica.html" style="margin: 0 10px;">[3] Información Médica</a>
+      </td>
+    </tr>
+  </table>
+
+  <table width="100%" cellpadding="2" cellspacing="0">
+    <tr>
+      <td align="left" width="33%"><a href="index.html">&#8592; Volver al listado</a></td>
+      <td align="center" width="34%"><b>Paso 1 de 3 &mdash; Datos del niño o niña</b></td>
+      <td align="right" width="33%">&nbsp;</td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <!-- Barra de pasos -->
+  <table width="100%" border="1" cellpadding="6" cellspacing="0">
+    <tr>
+      <td align="center" width="33%"><b>[1] Datos del niño</b></td>
+      <td align="center" width="33%">[ ] Informacion Familiar</td>
+      <td align="center" width="34%">[ ] Informacion Medica</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <form action="familiar.html" method="get">
+
+    <fieldset>
+      <legend><b>Datos Personales del niño o niña</b></legend>
+
+      <br>
+
+      <table width="100%" cellpadding="8" cellspacing="0">
+
+        <!-- Nombres y apellidos en dos filas para mejor distribución -->
+        <tr>
+          <td width="20%"><label for="nombres"><b>Nombres:</b></label></td>
+          <td width="30%"><input type="text" id="nombres" name="nombres" size="30" required></td>
+          <td width="20%"><label for="apellido1"><b>Primer apellido:</b></label></td>
+          <td width="30%"><input type="text" id="apellido1" name="apellido1" size="30" required></td>
+        </tr>
+        <tr>
+          <td><label for="apellido2"><b>Segundo apellido:</b></label></td>
+          <td colspan="3"><input type="text" id="apellido2" name="apellido2" size="75"></td>
+        </tr>
+
+        <tr><td colspan="4"><hr size="1"></td></tr>
+
+        <!-- Fecha de nacimiento -->
+        <tr>
+          <td><label for="fechaNacimiento"><b>Fecha de nacimiento:</b></label></td>
+          <td><input type="date" id="fechaNacimiento" name="fechaNacimiento" size="30" required></td>
+          <td colspan="2">&nbsp;</td>
+        </tr>
+
+        <tr><td colspan="4"><hr size="1"></td></tr>
+
+        <!-- Lugar de Nacimiento -->
+        <tr><td colspan="4"><h4>Lugar de Nacimiento</h4></td></tr>
+        <tr>
+          <td><label for="departamento"><b>Departamento:</b></label></td>
+          <td>
+            <select id="departamento" name="departamento" size="1" required>
+              <option value="">Seleccionar...</option>
+              <option value="Amazonas">Amazonas</option>
+              <option value="Antioquia">Antioquia</option>
+              <option value="Arauca">Arauca</option>
+              <option value="Atlántico">Atlántico</option>
+              <option value="Bolívar">Bolívar</option>
+              <option value="Boyacá">Boyacá</option>
+              <option value="Caldas">Caldas</option>
+              <option value="Caquetá">Caquetá</option>
+              <option value="Casanare">Casanare</option>
+              <option value="Cauca">Cauca</option>
+              <option value="Cesar">Cesar</option>
+              <option value="Chocó">Chocó</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Cundinamarca">Cundinamarca</option>
+              <option value="Guainía">Guainía</option>
+              <option value="Guaviare">Guaviare</option>
+              <option value="Huila">Huila</option>
+              <option value="La Guajira">La Guajira</option>
+              <option value="Magdalena">Magdalena</option>
+              <option value="Meta">Meta</option>
+              <option value="Nariño">Nariño</option>
+              <option value="Norte de Santander">Norte de Santander</option>
+              <option value="Putumayo">Putumayo</option>
+              <option value="Quindío">Quindío</option>
+              <option value="Risaralda">Risaralda</option>
+              <option value="San Andrés y Providencia">San Andrés y Providencia</option>
+              <option value="Santander">Santander</option>
+              <option value="Sucre">Sucre</option>
+              <option value="Tolima">Tolima</option>
+              <option value="Valle del Cauca">Valle del Cauca</option>
+              <option value="Vaupés">Vaupés</option>
+              <option value="Vichada">Vichada</option>
+            </select>
+          </td>
+          <td><label for="municipio"><b>Municipio</b></label></td>
+          <td>
+            <select id="municipio" name="municipio" size="1" required>
+              <option value="">Seleccionar...</option>
+              <option value="Armenia">Armenia</option>
+              <option value="Calarcá">Calarcá</option>
+              <option value="Circasia">Circasia</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Filandia">Filandia</option>
+              <option value="Génova">Génova</option>
+              <option value="Montenegro">Montenegro</option>
+              <option value="Pijao">Pijao</option>
+              <option value="Quimbaya">Quimbaya</option>
+              <option value="Salento">Salento</option>
+            </select>
+          </td>
+        </tr>
+        <tr><td colspan="4"><hr size="1"></td></tr>
+
+        <!-- Genero -->
+        <tr>
+          <td><label for="genero"><b>Genero:</b></label></td>
+          <td colspan="3">
+            <select id="genero" name="genero" size="1">
+              <option value="">Seleccionar...</option>
+              <option value="niño">niño</option>
+              <option value="niña">niña</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr><td colspan="4"><hr size="1"></td></tr>
+
+        <!-- Grado / Seccion -->
+        <tr>
+          <td><label for="grado"><b>Grado que ingresa:</b></label></td>
+          <td>
+            <select id="grado" name="grado" size="1" required>
+              <option value="">Seleccionar...</option>
+              <option value="1er grado">1er grado</option>
+              <option value="2do grado">2do grado</option>
+              <option value="3er grado">3er grado</option>
+              <option value="4to grado">4to grado</option>
+              <option value="5to grado">5to grado</option>
+            </select>
+          </td>
+          <td><label for="seccion"><b>Seccion:</b></label></td>
+          <td>
+            <input type="text" id="seccion" name="seccion" size="15" placeholder="Ej: A">
+          </td>
+        </tr>
+
+        <tr><td colspan="4"><hr size="1"></td></tr>
+
+        <!-- Domicilio -->
+        <tr>
+          <td><label for="domicilio"><b>Domicilio:</b></label></td>
+          <td colspan="3"><input type="text" id="domicilio" name="domicilio" size="90" placeholder="Direccion completa" required></td>
+        </tr>
+
+        <tr><td colspan="4"><hr size="1"></td></tr>
+
+        <!-- Telefonos -->
+        <tr>
+          <td><label for="telefono1"><b>Teléfono 1:</b></label></td>
+          <td>
+            <input type="tel" id="telefono1" name="telefono1" size="30" placeholder="0414-1234567" required>
+          </td>
+          <td><label for="telefono2"><b>Teléfono 2 (Opcional):</b></label></td>
+          <td>
+            <input type="tel" id="telefono2" name="telefono2" size="30" placeholder="Opcional: 0212-1234567">
+          </td>
+        </tr>
+
+      </table>
+
+      <br>
+      <p><small>* Campos obligatorios</small></p>
+
+    </fieldset>
+
+    <br>
+
+    <table width="100%" cellpadding="8">
+      <tr>
+        <td align="left" width="50%"><a href="index.html">Cancelar</a></td>
+        <td align="right" width="50%"><input type="submit" value="Siguiente →"></td>
+      </tr>
+    </table>
+
+  </form>
+
+  <hr>
+  <p align="center"><small>Sistema de Fichas de Inscripcion &mdash; Pagina 2 de 4</small></p>
+
+</body>
+</html>
